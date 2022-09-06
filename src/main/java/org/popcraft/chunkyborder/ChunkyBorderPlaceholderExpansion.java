@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class ChunkyBorderPlaceholderExpansion extends PlaceholderExpansion {
     private static final String IDENTIFIER = "chunkyborder";
     private static final String AUTHOR = "pop4959";
-    private static final String VERSION = "1.0.0";
+    private static final String VERSION = "1.0.1";
     private static final String NAME = "ChunkyBorder";
     private final ChunkyBorder chunkyBorder;
 
@@ -70,7 +70,7 @@ public class ChunkyBorderPlaceholderExpansion extends PlaceholderExpansion {
             case "radius", "radiusx" -> Double.toString(borderData.getRadiusX());
             case "radiusz" -> Double.toString(borderData.getRadiusZ());
             case "shape" -> borderData.getShape();
-            case "wrap" -> Boolean.toString(borderData.isWrap());
+            case "wrap" -> borderData.getWrap();
             default -> null;
         };
     }
